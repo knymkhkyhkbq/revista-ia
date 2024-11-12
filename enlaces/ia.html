@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/enlaces/styles.css">
+  <link rel="icon" href="/images/DALL·E 2024-11-10 14.08.52 - A modern, professional logo for a technology magazine website, featuring a sleek design with the words 'Tech Innovations' in a futuristic font. The lo.png">
+  <title>La Revolución de la Inteligencia Artificial en la Programación</title>
+  <style>
+    body{
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    button {
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
+    
+    button:hover {
+      background-color: #005f75;
+    }
+    
+    header {
+      background-color: #0078f0;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      margin: 20px;
+      background: linear-gradient(45deg,#c0e3ee, #e2d6f0, #e6e6ee, #ffffff, #2575fc);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2.5em;
+    }
+
+    h2 {
+      color: #555;
+      font-size: 2em;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    .highlight {
+      color: #008CBA;
+      font-weight: bold;
+    }
+
+    footer {
+        background-color: #008cff;
+        color: #504d4d;
+        text-align: center;
+        padding: 0px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        border-radius: 10px;
+    }
+
+    button {
+      background-color: #008CBA;
+      color: rgb(255, 248, 248);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #1bcef7;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="goBack()">Retroceder</button>
+  <header>
+    <h1>La Revolución de la Inteligencia Artificial en la Programación</h1>
+  </header>
+
+  <main>
+    <h2>Un Cambio Imparable</h2>
+    <p>La <span class="highlight">inteligencia artificial (IA)</span> ha llegado para transformar todos los ámbitos de nuestra vida, y el campo de la programación no es una excepción. Desde la automatización de tareas hasta la creación de código, la IA está cambiando la forma en que los programadores desarrollan software. En este artículo exploramos cómo la IA está revolucionando el desarrollo de software y qué significa para el futuro de la programación.</p>
+
+    <h2>IA en la Creación de Código</h2>
+    <p>Una de las aplicaciones más emocionantes de la IA en la programación es su capacidad para generar código automáticamente. Herramientas como <span class="highlight">GitHub Copilot</span> utilizan modelos de lenguaje basados en IA para sugerir líneas de código mientras el programador escribe, acelerando enormemente el proceso de desarrollo. Estas herramientas no solo pueden completar fragmentos de código, sino también generar funciones completas basadas en descripciones en lenguaje natural.</p>
+
+    <h2>Optimización y Depuración de Código</h2>
+    <p>La IA también está ayudando a optimizar y depurar el código. Con técnicas de machine learning, las herramientas pueden analizar grandes volúmenes de código, identificar patrones de errores comunes y sugerir mejoras. Esto permite a los desarrolladores ahorrar tiempo y reducir la cantidad de errores en sus proyectos.</p>
+
+    <h2>Automatización del Desarrollo</h2>
+    <p>Los sistemas basados en IA están automatizando tareas repetitivas que solían requerir intervención humana, como la escritura de pruebas unitarias, la gestión de dependencias y la integración continua. Esto no solo aumenta la eficiencia, sino que también permite a los programadores centrarse en tareas más creativas y estratégicas.</p>
+
+    <h2>El Futuro de la Programación</h2>
+    <p>El impacto de la inteligencia artificial en la programación está lejos de ser una moda pasajera. Se espera que en el futuro los desarrolladores trabajen mano a mano con herramientas basadas en IA para construir aplicaciones más rápidamente, de manera más eficiente y con mayor calidad. Además, la IA puede ayudar a personalizar las experiencias de desarrollo, adaptándose a las necesidades y el estilo de cada programador.</p>
+
+    <button onclick="showMore()">Descubre Más sobre la IA en la Programación</button>
+    <div id="extraContent" style="display:none; margin-top: 20px;">
+      <p>Además de la generación de código, la IA podría llevar la programación a un nuevo nivel de abstracción. Con el tiempo, las herramientas basadas en IA podrían ser capaces de escribir código completo basándose en descripciones de alto nivel, lo que cambiaría drásticamente el papel de los programadores en el proceso de desarrollo.</p>
+    </div>
+    <p></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 La Revolución de la IA en la Programación</p>
+  </footer>
+
+  <script>
+    function showMore() {
+      var extraContent = document.getElementById("extraContent");
+      if (extraContent.style.display === "none") {
+        extraContent.style.display = "block";
+      } else {
+        extraContent.style.display = "none";
+      }
+    }
+    function goBack() {
+      window.history.back();
+    }    
+  </script>
+
+</body>
+</html>

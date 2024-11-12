@@ -1,0 +1,319 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes y colores */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+    color: white;
+    padding: 20px 30px;
+}
+
+header .logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin: 0;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Sección de portada */
+.portada {
+    background: url('https://via.placeholder.com/1600x600?text=Portada') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.portada h2 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #16a085;
+}
+
+/* Sección de artículos */
+.secciones {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.secciones h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.articulo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.articulo {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.articulo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.articulo img {
+    width: 100%;
+    height: auto;
+}
+
+.articulo h3 {
+    font-size: 24px;
+    margin: 15px;
+}
+
+.articulo p {
+    padding: 0 15px;
+    color: #777;
+}
+
+.articulo .btn {
+    margin: 15px;
+    background-color: #34495e;
+}
+
+.articulo .btn:hover {
+    background-color: #2c3e50;
+}
+
+/* Sección de suscripción */
+.suscripcion {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.suscripcion h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.suscripcion form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #34495e;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries para Responsividad */
+
+/* Ajustes para pantallas pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .portada h2 {
+        font-size: 36px;
+    }
+
+    .portada p {
+        font-size: 18px;
+    }
+
+    .articulo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .articulo h3 {
+        font-size: 20px;
+    }
+
+    .suscripcion h2 {
+        font-size: 28px;
+    }
+
+    input[type="email"] {
+        width: 250px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .portada {
+        padding: 60px 20px;
+    }
+
+    .portada h2 {
+        font-size: 28px;
+    }
+
+    .portada p {
+        font-size: 16px;
+    }
+
+    .articulo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .articulo h3 {
+        font-size: 18px;
+    }
+
+    .suscripcion h2 {
+        font-size: 24px;
+    }
+
+    input[type="email"] {
+        width: 200px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Sección de portada */
+.portada {
+    background: url("images/gettyimages-1017199998-2.jpg");
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+
+.portada-contenido {
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+  .logo{
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  ul{
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
